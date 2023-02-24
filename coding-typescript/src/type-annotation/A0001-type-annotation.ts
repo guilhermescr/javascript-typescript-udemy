@@ -10,10 +10,20 @@ let $symbol: symbol = Symbol('qualquer');
 // let numberArray: number[] = [1, 2, 3, 4];
 // let stringArray: string[] = ['A', 'B', 'C'];
 
-let person: {username: string, id: number, isOnline: boolean, hasMoney?: boolean} = {
+let person: {
+  username: string;
+  id: number;
+  isOnline: boolean;
+  hasMoney?: boolean;
+} = {
   username: 'Guiga',
   id: 1,
-  isOnline: true
+  isOnline: true,
 };
 
-const concatenate: (user_name: string, surname: string) => string = (user_name, surname) => user_name + surname;
+const concatenate: (user_name: string, surname: string) => string = (
+  user_name,
+  surname,
+) => user_name + surname;
+
+console.log(concatenate('Guilherme', 'Rocha'));
